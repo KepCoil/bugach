@@ -35,6 +35,12 @@
      max-width: 1140px;
    }
  }
+
+ @media (min-width: 1440px) {
+  .container {
+    max-width: 1380px;
+  }
+}
  
  .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
    width: 100%;
@@ -67,6 +73,11 @@
      max-width: 1140px;
    }
  }
+ @media (min-width: 1440px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xlg {
+    max-width: 1380px;
+  }
+}
  
  .row {
    display: flex;
