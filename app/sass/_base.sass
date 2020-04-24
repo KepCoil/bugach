@@ -5,8 +5,26 @@
 	box-sizing: border-box
 	&:before, &:after
 		box-sizing: border-box
+
+*::placeholder
+	color: #444
+	opacity: 1
+*::-webkit-input-placeholder
+	color: #444
+	opacity: 1
+*:-moz-placeholder
+	color: #444
+	opacity: 1
+*::-moz-placeholder
+	color: #444
+	opacity: 1
+*:-ms-input-placeholder
+	color: #444
+	opacity: 1
+
 html
 	font-size: 100%
+
 html, body
 	height: 100%
 
@@ -14,12 +32,14 @@ body
 	font-size: 1rem
 	min-width: 320px
 	position: relative
+	color: $default-color
 	line-height: 1.2
 	font-weight: 400
 	font-family: 'Exo 2', sans-serif
 	overflow-x: hidden
 	opacity: 1
-
+input, textarea
+	outline: none
 .img-responsive
 	display: block
 	max-width: 100%
@@ -31,11 +51,40 @@ body
 .accent
 	color: $orange
 
+.mb0
+	margin-bottom: 0 !important
+
 .sect-wrap
-	padding: rem(70px 0 50px 0)
+	padding: rem(70px 0 30px 0)
+	&__wrap
+		position: relative
+		z-index: 1
 	&__title
 		font-size: rem(50px)
 		font-weight: 800
 		margin-top: 0
 		margin-bottom: rem(50px)
 		text-align: center
+		&_white
+			color: #fff
+			text-shadow: $text-shadow
+
+.def-btn
+	text-align: center
+	&__btn
+		display: inline-block
+		color: #fff
+		text-decoration: none
+		font-size: rem(18px)
+		line-height: 1
+		font-weight: 600
+		background-color: transparent
+		border: 3px solid #fff
+		border-radius: 2rem
+		padding: rem(16px 40px)
+		transition: background-color $main-trans, color $main-trans
+		cursor: pointer
+		&:hover
+			background-color: #fff
+			color: $default-color
+	

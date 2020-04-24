@@ -44,8 +44,8 @@
 							<br/>Вам <span class="accent">гарантию</span>
 						</div>
 
-						<div class="promo__btn-wrap">
-							<a href="#" class="promo__btn">Заказать звонок</a>
+						<div class="def-btn">
+							<a href="#" class="def-btn__btn">Заказать звонок</a>
 						</div>
 					</div>
 				</div>
@@ -70,7 +70,7 @@
 		</header>
 
 
-		<section class="sect-wrap services">
+		<section class="sect-wrap sect-services">
 			<div class="container">
 				<h2 class="sect-wrap__title">Наши <span class="accent">Услуги</span></h2>
 
@@ -86,7 +86,7 @@
 									<div class="serv-card__price">
 										от
 										<span class="serv-card__price-num">20000</span>
-										<i class="fas fa-ruble-sign serv-card__icon"></i>
+										<i class="fas fa-ruble-sign"></i>
 									</div>
 								</div>
 							</div>
@@ -101,7 +101,7 @@
 									<div class="serv-card__price">
 										от
 										<span class="serv-card__price-num">5000</span>
-										<i class="fas fa-ruble-sign serv-card__icon"></i>
+										<i class="fas fa-ruble-sign"></i>
 									</div>
 								</div>
 							</div>
@@ -116,7 +116,7 @@
 									<div class="serv-card__price">
 										от
 										<span class="serv-card__price-num">3000</span>
-										<i class="fas fa-ruble-sign serv-card__icon"></i>
+										<i class="fas fa-ruble-sign"></i>
 									</div>
 								</div>
 							</div>
@@ -131,7 +131,7 @@
 									<div class="serv-card__price">
 										от
 										<span class="serv-card__price-num">1500</span>
-										<i class="fas fa-ruble-sign serv-card__icon"></i>
+										<i class="fas fa-ruble-sign"></i>
 									</div>
 								</div>
 							</div>
@@ -146,7 +146,7 @@
 									<div class="serv-card__price">
 										от
 										<span class="serv-card__price-num">1500</span>
-										<i class="fas fa-ruble-sign serv-card__icon"></i>
+										<i class="fas fa-ruble-sign"></i>
 									</div>
 								</div>
 							</div>
@@ -161,7 +161,7 @@
 									<div class="serv-card__price">
 										от
 										<span class="serv-card__price-num">500</span>
-										<i class="fas fa-ruble-sign serv-card__icon"></i>
+										<i class="fas fa-ruble-sign"></i>
 									</div>
 								</div>
 							</div>
@@ -176,7 +176,7 @@
 									<div class="serv-card__price">
 										от
 										<span class="serv-card__price-num">10000</span>
-										<i class="fas fa-ruble-sign serv-card__icon"></i>
+										<i class="fas fa-ruble-sign"></i>
 									</div>
 								</div>
 							</div>
@@ -190,13 +190,79 @@
 									<div class="serv-card__text">Сварка конструкций и монтаж по чертежам заказчика, изготовление нестандартных инструментов, съемников и оправок</div>
 									<div class="serv-card__price serv-card__price_npr">
 										<span class="serv-card__price-num">индивидуально</span>
-										<i class="fas fa-ruble-sign serv-card__icon"></i>
+										<i class="fas fa-ruble-sign"></i>
 									</div>
 								</div>
 							</div>
 						</div>
 
 					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="sect-wrap sect-form">
+			<div class="sect-wrap__wrap">
+				<div class="container">
+				
+					<h2 class="sect-wrap__title sect-wrap__title_white">Форма обратной связи</h2>
+
+					<form class="form-callback">
+
+						<div class="form-callback__item">
+							<label for="inp-name" class="form-callback__label">
+								<i class="fas fa-user form-callback__icon"></i>
+								<span class="form-callback__label-text">Ваше имя *</span>
+							</label>
+							<input id="inp-name" class="form-callback__form-el" type="text" placeholder="Как к Вам обращаться?" required="required">
+						</div>
+
+						<div class="form-callback__item">
+							<label for="inp-phone" class="form-callback__label">
+								<i class="fas fa-mobile-alt form-callback__icon"></i>
+								<span class="form-callback__label-text">Контактный телефон *</span>
+							</label>
+							<input id="inp-phone" class="form-callback__form-el" type="tel" placeholder="По данному номеру свяжемся с Вами" required="required">
+						</div>
+
+						<div class="form-callback__item">
+							<label for="inp-sel" class="form-callback__label">
+								<i class="fas fa-users-cog form-callback__icon"></i>
+								<span class="form-callback__label-text">Необходимая услуга</span>
+							</label>
+							<select name="inp-sel" id="inp-sel" class="js-selectize">
+								<option value="default" selected="selected">Не выбрана (по умолчанию)</option>
+								<option value="engine">Ремонт двигателей</option>
+								<option value="transmission">Ремонт трансмиссии</option>
+								<option value="car-bottom">Обслуживание подвески</option>
+								<option value="to">Техническое обслуживание</option>
+								<option value="lathe-works">Токарные и фрезерные работы</option>
+								<option value="spec-tech">Ремонт оборудования спец. техники</option>
+								<option value="individ">Разработка агрегатов и приспособлений по заказу клиента</option>
+								<option value="other-work">Иные работы</option>
+							</select>
+						</div>
+
+						<div class="form-callback__item mb0">
+							<label for="inp-text" class="form-callback__label">
+								<i class="fas fa-comment-dots"></i>
+								<span class="form-callback__label-text">Ваше сообщение</span>
+							</label>
+							<textarea id="inp-text" class="form-callback__form-el form-callback__form-el_text-area" rows="6" placeholder="Возможно Вы хотите рассказать, что требуется от нас?"></textarea>
+						</div>
+
+						<div class="form-callback__info">* - обязательные поля</div>
+
+						<div class="def-btn">
+							<button class="def-btn__btn">Заказать звонок</button>
+						</div>
+
+					</form>
+
+					
+
 				</div>
 			</div>
 		</section>

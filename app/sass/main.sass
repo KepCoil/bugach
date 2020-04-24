@@ -94,22 +94,7 @@
       letter-spacing: 0.35px
       text-shadow: $text-shadow
       margin-bottom: rem(20px)
-   &__btn-wrap
-      text-align: center
-   &__btn
-      display: inline-block
-      color: #fff
-      text-decoration: none
-      font-size: rem(18px)
-      line-height: 1
-      font-weight: 600
-      border: 3px solid #fff
-      border-radius: 2rem
-      padding: rem(16px 40px)
-      transition: background-color $main-trans, color $main-trans
-      &:hover
-         background-color: #fff
-         color: $default-color
+   
 
 
 .head-cont
@@ -131,9 +116,9 @@
       text-decoration: none
 /**/
 
+   
 /* SECTION SERVICES */
 .serv-card
-	margin-bottom: rem(50px)
 	&__col
 		display: flex
 	&__item
@@ -162,10 +147,95 @@
 		line-height: 1
 		font-weight: 800
 		padding-right: rem(25px)
-		&-num
-			margin: 0 3px
-		&_npr
-			padding-right: 0
+	&-num
+		margin: 0 3px
+	&_npr
+		padding-right: 0
+
+.sect-form
+	background-image: url(../img/bg-callback.jpg)
+	background-size: cover
+	position: relative
+	color: #fff
+	padding-bottom: rem(50px)
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background-color: rgba(251,154,0,.8)
+
+.form-callback
+	width: 100%
+	max-width: 400px
+	margin: 0 auto
+	&__item
+		margin-bottom: rem(30px)
+	&__label
+		display: block
+		font-size: rem(22px)
+		text-shadow: $text-shadow
+		font-weight: 800
+		margin-bottom: rem(10px)
+		padding-left: rem(24px)
+	&__icon
+		margin-right: rem(5px)
+	&__form-el
+		display: block
+		width: 100%
+		border-radius: 2rem
+		border: 3px solid #fff
+		background-color: rgba(255,255,255,.45)
+		padding: rem(15px 20px)
+		font-size: rem(18px)
+		font-weight: 500
+		font-family: $default-font
+		&_text-area
+			max-width: 100% !important
+			max-height: rem(300px) !important
+	&__info
+		font-size: rem(16px)
+		margin: rem(10px 0 30px 22px)
+
+   
+.selectize-input
+	display: block
+	width: 100%
+	transition: border-raid
+	padding: rem(15px 20px)
+	font-size: rem(18px)
+	font-weight: 500
+	font-family: $default-font
+.selectize-input,
+.selectize-input.dropdown-active
+	border-radius: 2rem
+.selectize-input.full
+	background-color: rgba(255,255,255,.45)
+	border: 3px solid #fff
+.selectize-dropdown
+	width: auto !important
+	margin-left: rem(20px)
+	right: rem(20px)
+.selectize-dropdown, 
+.selectize-input, 
+.selectize-input input
+	font-size: rem(18px)
+	line-height: 1.2
+	white-space: nowrap
+.selectize-dropdown .active
+	background-color: rgba(251,154,0,.2)
+	color: #444
+.selectize-dropdown .option
+	padding: rem(12px 15px)
+	cursor: pointer
+.selectize-input
+	color: #444
+  
 
 /**/
 @import "media" // Всегда в конце

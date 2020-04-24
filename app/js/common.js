@@ -1,5 +1,7 @@
 $(function() {
 
-	// Custom JS
+	$('.js-selectize').selectize(function() {
+		create: true
+	})
 
 });
