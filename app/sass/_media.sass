@@ -7,12 +7,21 @@
 
 /* xl */
 @media only screen and (max-width : 1200px)
-	/**/
+	html
+		font-size: 85%
 
 
 /* lg */
 @media only screen and (max-width : 992px)
-	/**/
+	html
+		font-size: 80%
+	.map-cont
+		&__map
+			height: rem(650px)
+		&__info
+			top: rem(60px)
+			margin-bottom: rem(60px)
+			right: rem(60px)
 
 
 /* md */
@@ -22,15 +31,48 @@
 
 /* sm */
 @media only screen and (max-width : 576px)
-	/**/
-
+	html
+		font-size: 75%
+	.serv-card
+		&__item
+			margin-bottom: 30px
+		&__img
+			padding: 25%
+	.map-cont
+		&__map
+			height: rem(350px)
+		&__info
+			position: static
+			border: none
+			margin-bottom: 0
+			border-radius: 0
+		&__title
+			text-align: center
+		&__img
+			width: 100%
+	
 
 /* sm- */
 @media only screen and (max-width : 480px)
-	/**/
+	.top-line
+		display: block
+		text-align: center
+	.logo
+		margin-bottom: 15px
+	.promo
+		&__wrap
+			display: block
+		&__title
+			font-size: rem(32px)
+	.head-cont
+		&__wrap
+			display: block
+		&__item:first-child
+			margin-bottom: 15px
+	
 
 
 /* xs */
 @media only screen and (max-width : 320px)
-	/**/
+	/*  */
 
