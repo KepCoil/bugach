@@ -240,7 +240,7 @@
 								<option value="to">Техническое обслуживание</option>
 								<option value="lathe-works">Токарные и фрезерные работы</option>
 								<option value="spec-tech">Ремонт оборудования спец. техники</option>
-								<option value="individ">Разработка агрегатов и приспособлений по заказу клиента</option>
+								<option value="individ">Работы по заказу клиента</option>
 								<option value="other-work">Иные работы</option>
 							</select>
 						</div>
@@ -268,8 +268,70 @@
 		</section>
 
 
+		<footer class="foot-cont">
+			<div class="map-cont">
+				<div id="ya-map" class="map-cont__map"></div>
+				<div class="map-cont__info">
+					<h2 class="map-cont__title">Наши <span class="accent">Контакты</span></h2>
+					
+					<div class="map-cont__item">
+						<i class="map-cont__icon fas fa-map-marker-alt"></i>
+						<span class="map-cont__text">г. Красноярск, ул. Бийхемская 25</span>
+					</div>
+					<div class="map-cont__item">
+						<i class="map-cont__icon fas fa-user-clock"></i>
+						<span class="map-cont__text">пн - пт с 9:00 - 18:00</span>
+					</div>
+					<div class="map-cont__item">
+						<i class="map-cont__icon fas fa-at"></i>
+						<span class="map-cont__text">Email: <a class="map-cont__link" href="mailto:rolling82@mail.ru">rolling82@mail.ru</a></span>
+					</div>
+					<div class="map-cont__item">
+						<i class="map-cont__icon fas fa-mobile-alt"></i>
+						<span class="map-cont__text">Сервис: <a class="map-cont__link" href="tel:89083257905">+7 (908) 325-79-05</a></span>
+					</div>
+					<div class="map-cont__item">
+						<i class="map-cont__icon fas fa-mobile-alt"></i>
+						<span class="map-cont__text">Токарный цех: <a class="map-cont__link" href="tel:89504010803">+7 (950) 401-08-03</a></span>
+					</div>
+
+					<div class="map-cont__item map-cont__item_mg-wrap">
+						<img src="img/build-cont.jpg" alt="Фото мастерской" class="map-cont__img" title="Фото здания мастерской">
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
 	</main>
 	<script src="js/scripts.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=08b5831f-615f-4c03-9dc8-777650b3ee4b&lang=ru_RU"></script>
+	<script>
+		// Yandex Map
+		ymaps.ready(function () {
+			var myMap = new ymaps.Map('ya-map', {
+					center: [56.05339750477862,92.7787498949697],
+					zoom: 16,
+					controls: ['zoomControl', 'fullscreenControl']
+				}, {
+					searchControlProvider: 'yandex#search'
+				}),
+				myPlacemark = new ymaps.Placemark([56.054980, 92.770295], {
+					balloonContentHeader: "Ремонтно-механическая мастерская Бугач",
+					balloonContentBody: "ул. Бийхемская 25",
+				},
+				{
+					preset: 'islands#orangeIcon'
+				});
+			
+			myMap.geoObjects.add(myPlacemark);
+			myMap.behaviors.disable('scrollZoom')
+
+		});
+
+
+		// Yandex Metrika
+	</script>
 
 </body>
 </html>

@@ -14,6 +14,7 @@ gulp.task('browser-sync', function() {
 		server: {
 			baseDir: 'app'
 		},
+		browser: 'Firefox',
 		notify: false,
 		// tunnel: true,
 		// tunnel: "projectmane", //Demonstration page: http://projectmane.localtunnel.me

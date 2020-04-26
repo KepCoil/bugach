@@ -236,6 +236,46 @@
 .selectize-input
 	color: #444
   
-
+.map-cont
+	position: relative
+	&__map
+		width: 100%
+		height: rem(750px)
+		z-index: 1
+	&__info
+		position: absolute
+		top: 75px
+		margin-bottom: 75px
+		right: 100px
+		padding: rem(25px 35px)
+		background-color: rgba(255,255,255,0.8)
+		border: 1px solid rgba(0,0,0,.05)
+		border-radius: 10px
+	&__item
+		white-space: nowrap
+		margin-bottom: rem(20px)
+	&__icon
+		width: rem(25px)
+		height: auto
+		margin-right: rem(8px)
+		font-size: rem(20px)
+	&__text
+		font-size: rem(19px)
+		font-weight: 600
+	&__title
+		font-size: rem(32px)
+		margin: rem(0 0 35px 0)
+	&__link
+		color: $default-color
+		transition: color $main-trans
+		&:hover
+			color: $orange
+	&__item_mg-wrap
+		margin: rem(35px 0 0 0)
+	&__img
+		display: inline-block
+		width: rem(350px)
+		height: auto
+		
 /**/
 @import "media" // Всегда в конце
